@@ -1,0 +1,15 @@
+{
+    ".url": {
+        "com.synocommunity.packages.spip": {
+            "title": "spip",
+            "desc": "spip",
+            "icon": "images/adminer-{0}.png",
+            "type": "url",
+            "protocol": "http",
+            "port": "80",
+            "url": "/spip",
+            "allUsers": false,
+            "grantPrivilege": "local"
+        }
+    }
+}
