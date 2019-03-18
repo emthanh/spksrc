@@ -24,7 +24,7 @@ include ../../mk/spksrc.cross-cc.mk
 myInstall:
 	mkdir -p $(STAGING_INSTALL_PREFIX)/share/spip
 	mkdir -p $(WORK_DIR)/spip/plugins/auto
-	cat htaccess-patch >> $(WORK_DIR)/spip/.htaccess
+	cat $(WORK_DIR)/../src/htaccess-patch >> $(WORK_DIR)/spip/.htaccess
 	cat $(WORK_DIR)/spip/htaccess.txt >> $(WORK_DIR)/spip/.htaccess
 	tar -cf - -C $(WORK_DIR)/spip . | tar -xf - -C $(STAGING_INSTALL_PREFIX)/share/spip
 	chmod -R 755 $(STAGING_INSTALL_PREFIX)/share/spip
